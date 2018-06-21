@@ -2,12 +2,12 @@ package lyons.entity;
 
 /**
  * SalesMan 售货员实体类
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
 
 public final class SalesMan
 {
-	private int sId;
+	private Integer sId;
 	private String sName;
 	private String sPassWord;
 	

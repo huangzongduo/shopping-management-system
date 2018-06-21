@@ -1,7 +1,7 @@
 package lyons.entity;
 /**
  * goods 商品实体类
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
 public final class Goods
 {

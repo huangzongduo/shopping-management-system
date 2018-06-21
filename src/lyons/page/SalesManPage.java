@@ -9,7 +9,7 @@ import lyons.tools.ScannerChoice;
 
 /**
  * 操作售货员界面           
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
 
 public final class SalesManPage extends ScannerChoice

@@ -12,7 +12,7 @@ import lyons.entity.SalesMan;
 
 /**
  * 数据库SalesMan表操作
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
 public final class SalesManDao
 {

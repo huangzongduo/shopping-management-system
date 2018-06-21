@@ -9,7 +9,7 @@ import lyons.page.SalesManPage;
 /**
  * 1.各種完成操作后的 选择下一步
  * 2.界面选择操作
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
 
 public class ScannerChoice

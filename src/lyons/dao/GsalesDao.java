@@ -12,14 +12,14 @@ import lyons.entity.Gsales;
 
 /**
  * 数据库gSales表操作
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
-public final class GsalesDao
+public class GsalesDao
 {
 	
-	Connection        conn  = null;
-	PreparedStatement pstmt = null;
-	ResultSet 		  rs    = null;
+	private static Connection conn  = null;
+	private static PreparedStatement pstmt = null;
+	private static ResultSet rs = null;
 	
 	/**
 	 * 1.当天卖出的商品
@@ -28,11 +28,13 @@ public final class GsalesDao
 	public ArrayList<Gsales> dailyGsales()
 	{
 		ArrayList<Gsales> GsalesList = new ArrayList<Gsales>(); 
-		conn = DbConn.getconn();
+		conn = DbConn.getconn();	//获得链接对象
 
 		//售卖时间=当前时间 trunc(sdate) =trunc(sysdate) 单位：天
 		//sql语句解释见files/sql/java_sql.sql
+		
 		String sql = "select gname,gprice,gnum, allSum from goods, (select gid as salesid,sum(snum) as allSum from gsales where trunc(sdate) =trunc(sysdate) group by gid) where gid = salesid"; 
+		
 		try
 		{
 			pstmt = conn.prepareStatement(sql);

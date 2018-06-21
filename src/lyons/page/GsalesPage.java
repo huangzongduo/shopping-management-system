@@ -8,7 +8,7 @@ import lyons.tools.ScannerChoice;
 
 /**
  * 当日卖出商品列表界面
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
 
 public final class GsalesPage

@@ -5,36 +5,36 @@ import java.sql.SQLException;
 import java.sql.Connection;
 
 /**
- * 连接oracle数据库
- * @author lyons(zhanglei)
+ * 连接mysql数据库
+ * @author lyons(hzd)
  */
-public final class DbConn
+public class DbConn
 {
-	public static  Connection getconn()
-	{
-		Connection conn = null;
-		
-		String user   = "sys";
-		String passwd = "sys";
-		String url = "jdbc:oracle:thin:@localhost:1521:orcl";//orcl为oracle数据库实例名字
-		System.out.println("4");
-		//已加载完驱动
-		
-		
-		try
-		{
-			Class.forName("oracle.jdbc.driver.OracleDriver"); 
-			
-		}catch (ClassNotFoundException e)
-		{
-			System.out.println("zhoabudao");
+	private static String user = "hzd";
+	private static String passwd = "hero0630";
+	
+	private static String url = "jdbc:mysql://localhost:3306/shopping";
+	private static String driver = "com.mysql.jdbc.Driver";
+	/**
+	 * 静态块加载驱动，避免重复加载
+	 */
+	static{
+		try{
+			Class.forName(driver);
+		}catch(ClassNotFoundException e){
 			e.printStackTrace();
 		}
+	}
+	/**
+	 * 单例模式返回数据库链接
+	 */
+	public static  Connection getconn(){
+		Connection conn = null;
 		try {
 			conn = DriverManager.getConnection(url,user,passwd);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.out.println("fail to access to db");
 		}
 		return conn;
 	}

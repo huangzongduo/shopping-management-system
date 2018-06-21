@@ -14,7 +14,7 @@ import lyons.entity.SalesMan;
 
 /**
  * 查询&&打印 函数工具(后期优化可能会删)
- *@author lyons(zhanglei)
+ *@author lyons(hzd)
  */
 
 public final class QueryPrint

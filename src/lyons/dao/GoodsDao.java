@@ -13,9 +13,9 @@ import lyons.tools.ScannerChoice;
 
 /**
  * 数据库goods表操作
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
-public final class GoodsDao 
+public class GoodsDao 
 {
 		Connection        conn  = null;
 		PreparedStatement pstmt = null;

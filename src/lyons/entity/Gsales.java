@@ -2,25 +2,25 @@ package lyons.entity;
 
 /**
  * Gsales g购物结算实体类
- * @author lyons(zhanglei)
+ * @author lyons(hzd)
  */
 
 public final class Gsales
 {
-	private int gId;
-	private int sId;
-	private int sNum;
+	private Integer gId;
+	private Integer sId;
+	private Integer sNum;
 	
 	private String gName; 
-	private double gPrice;
-	private int gNum;
-	private int allSnum; //单种商品销量总和
+	private Double gPrice;
+	private Integer gNum;
+	private Integer allSnum; //单种商品销量总和
 	
 	/**
 	 * 购物结算
 	 * @param gId,sId,sNum
 	 */
-	public Gsales(int gId,int sId, int sNum)
+	public Gsales(Integer gId,Integer sId, Integer sNum)
 	{
 		this.gId = gId;
 		this.sId = sId;

@@ -2,19 +2,16 @@ package lyons.page;
 
 import java.util.ArrayList;
 
-import lyons.dao.GoodsDao;
-import lyons.dao.GsalesDao;
-import lyons.dao.SalesManDao;
-import lyons.entity.Goods;
-import lyons.entity.Gsales;
-import lyons.entity.SalesMan;
-import lyons.tools.Arith;
-import lyons.tools.QueryPrint;
-import lyons.tools.ScannerChoice;
+import lyons.dao.*;
+
+import lyons.entity.*;
+
+import lyons.tools.*;
+
 
 /**
  * 商超购物管理系统主界面            
- * @author 张磊
+ * @author hzd
  * @version 1.0
  */
 
